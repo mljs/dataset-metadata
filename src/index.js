@@ -1,0 +1,1 @@
+export { METADATA } from './METADATA';
