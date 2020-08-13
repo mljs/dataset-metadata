@@ -162,7 +162,7 @@ export class METADATA {
    * @return {Object} return { title, groupIDs, nClass, classVector, classFactor, classMatrix }
    */
   get(header, options = {}) {
-    const { format = 'vector' } = options;
+    const { format = 'vector', filter = [] } = options;
     let index = this.headers.indexOf(header);
     let classVector = this.values[index];
 
@@ -170,6 +170,9 @@ export class METADATA {
     let counts = summaryAClass(classVector);
     let groupIDs = Object.keys(counts);
     let nClass = groupIDs.length;
+
+    // if (filter.length > 0) {
+    //}
 
     let classValues;
     switch (format) {
