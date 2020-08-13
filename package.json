@@ -40,6 +40,8 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
     "cheminfo-build": "^1.1.3",
     "eslint": "^7.6.0",
     "eslint-config-cheminfo": "^5.0.0",
@@ -50,9 +52,7 @@
     "jest-matcher-deep-close-to": "^2.0.1",
     "ml-dataset-iris": "^1.1.1",
     "prettier": "^2.0.5",
-    "rollup": "^2.24.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup": "^2.24.0"
   },
   "dependencies": {
     "ml-matrix": "^6.5.1"
